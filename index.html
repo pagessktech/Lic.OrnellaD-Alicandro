@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lic. Ornella D’Alicandro — Psicóloga Clínica | Terapia Cognitivo-Conductual</title>
+    
+    <!-- SEO y Open Graph Meta Tags -->
+    <meta name="description" content="Acompañamiento terapéutico para adultos y adolescentes con la Lic. Ornella D’Alicandro. Terapia Cognitivo-Conductual y Contextual basada en evidencia. Atención online y presencial.">
+    <meta name="author" content="Lic. Ornella D’Alicandro">
+    <meta name="keywords" content="psicologa, terapia, cognitivo conductual, tcc, ansiedad, depresion, uba, ornella d'alicandro, psicologa clinica">
+    <meta property="og:title" content="Lic. Ornella D’Alicandro — Psicóloga Clínica y Profesora UBA">
+    <meta property="og:description" content="Acompañamiento terapéutico para adultos y adolescentes. Terapia Cognitivo-Conductual y Contextual basada en evidencia. Atención online y presencial.">
+    <meta property="og:image" content="https://placehold.co/1200x630/D2F0F2/292A31?text=Lic.+Ornella+D'Alicandro">
+    <meta property="og:url" content="https://www.ornelladalicandro.com"> <!-- Reemplazar con el dominio real -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper.js for Testimonials Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Custom CSS and Tailwind Config -->
+    <style>
+        /* Definición de variables de color y tipografías */
+        :root {
+            --mint-100: #D2F0F2;
+            --mint-200: #B5CECF;
+            --accent-dark: #292A31;
+            --neutral: #A3A7AA;
+            --white: #FFFFFF;
+            --font-display: 'Playfair Display', serif;
+            --font-sans: 'Inter', sans-serif;
+        }
+
+        /* Aplicación de fuentes base */
+        body {
+            font-family: var(--font-sans);
+            color: var(--accent-dark);
+            background-color: var(--white);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+        }
+        
+        /* Efecto de "vidrio" (glassmorphism) */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Estilos generales para sliders de Swiper */
+        .swiper-pagination-bullet-active {
+            background-color: var(--accent-dark) !important;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--accent-dark) !important;
+        }
+        
+        /* Estilos específicos para el carrusel de recursos */
+        .swiper-recursos {
+            padding: 0 40px; /* Espacio para los botones de navegación */
+        }
+
+        /* Sombra sutil para el header al hacer scroll */
+        .header-scrolled {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+    
+    <script>
+        // Configuración de Tailwind CSS para usar las variables y fuentes personalizadas
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mint-100': 'var(--mint-100)',
+                        'mint-200': 'var(--mint-200)',
+                        'accent-dark': 'var(--accent-dark)',
+                        'neutral': 'var(--neutral)',
+                        'white': 'var(--white)',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#inicio" class="flex items-center space-x-2">
+                 <svg class="h-10 w-10 text-accent-dark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4"/>
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-family="var(--font-display)" font-size="40" fill="currentColor">OD</text>
+                </svg>
+                <span class="font-semibold text-lg hidden sm:block">Lic. Ornella D’Alicandro</span>
+            </a>
+            
+            <!-- Navegación Desktop -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-accent-dark hover:text-mint-200 transition">Inicio</a>
+                <a href="#sobre-mi" class="text-accent-dark hover:text-mint-200 transition">Sobre mí</a>
+                <a href="#servicios" class="text-accent-dark hover:text-mint-200 transition">Servicios</a>
+                <a href="#testimonios" class="text-accent-dark hover:text-mint-200 transition">Testimonios</a>
+                <a href="#recursos" class="text-accent-dark hover:text-mint-200 transition">Recursos</a>
+                <a href="#contacto" class="text-accent-dark hover:text-mint-200 transition">Contacto</a>
+            </nav>
+            
+            <!-- Botón CTA Header -->
+            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-accent-dark text-white px-6 py-2 rounded-full font-semibold hover:bg-opacity-80 transition-transform duration-200 hover:scale-105">Pedir turno</a>
+
+            <!-- Menú Móvil (Hamburguesa) -->
+            <button id="mobile-menu-button" class="md:hidden z-50">
+                <svg class="w-6 h-6 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Panel Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-0 left-0 w-full h-screen bg-white transition-transform duration-300 ease-in-out transform -translate-x-full">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="#inicio" class="mobile-link text-2xl">Inicio</a>
+                <a href="#sobre-mi" class="mobile-link text-2xl">Sobre mí</a>
+                <a href="#servicios" class="mobile-link text-2xl">Servicios</a>
+                <a href="#testimonios" class="mobile-link text-2xl">Testimonios</a>
+                <a href="#recursos" class="mobile-link text-2xl">Recursos</a>
+                <a href="#contacto" class="mobile-link text-2xl">Contacto</a>
+                <a href="#contacto" class="mt-8 bg-accent-dark text-white px-8 py-3 rounded-full font-semibold">Pedir turno</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section id="inicio" class="relative min-h-screen flex items-center bg-mint-100 overflow-hidden">
+            <div id="lottie-bg" class="absolute inset-0 z-0 opacity-20" style="transform: scale(1.5);"></div>
+            <div class="container mx-auto px-6 z-10">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Contenido de Texto -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-display text-accent-dark leading-tight">Acompañamiento terapéutico claro y cercano.</h1>
+                        <p class="hero-subtitle mt-4 text-lg text-accent-dark max-w-xl mx-auto md:mx-0">Trabajo desde la evidencia: Terapia Cognitivo–Conductual y Contextual. Atención online y presencial.</p>
+                        <div class="hero-cta mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="bg-accent-dark text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-opacity-80 transition-transform duration-200 hover:scale-105 inline-block">Solicitar consulta</a>
+                            <a href="#servicios" class="bg-transparent border-2 border-accent-dark text-accent-dark px-8 py-3 rounded-full font-semibold text-lg hover:bg-accent-dark hover:text-white transition duration-200">Ver servicios</a>
+                        </div>
+                    </div>
+                    <!-- Elemento Visual -->
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="hero-visual">
+                           <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045790/Captura_de_pantalla_2025-09-16_150259_juinfo.png" alt="Ilustración sobre bienestar y calma" class="w-full max-w-md mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE MÍ SECTION ===== -->
+        <section id="sobre-mi" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div class="lg:w-1/3 reveal-up">
+                        <!-- Reemplazar por foto profesional -->
+                        <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045670/Captura_de_pantalla_2025-09-16_150059_kgisqp.png" alt="Retrato profesional de la Lic. Ornella D’Alicandro" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="lg:w-2/3 reveal-up">
+                        <h2 class="text-3xl lg:text-4xl font-display text-accent-dark">Mi Enfoque Terapéutico</h2>
+                        <p class="mt-4 text-lg text-neutral-800 leading-relaxed">
+                            Soy Lic. Ornella D’Alicandro, psicóloga clínica y docente en la UBA. Trabajo con adultos y adolescentes desde enfoques basados en evidencia (TCC, ACT y terapia contextual). Mi objetivo es ofrecer herramientas prácticas que mejoren tu vida cotidiana y te ayuden a construir un bienestar sostenible.
+                        </p>
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-accent-dark">
+                            <div class="bg-mint-100/50 p-4 rounded-lg">
+                                <h3 class="font-bold">Credenciales</h3>
+                                <p>MN: 75929 · MP: 99785</p>
+                            </div>
+                            <div class="bg-mint-100/50 p-4 rounded-lg">
+                                <h3 class="font-bold">Orientación</h3>
+                                <p>Cognitivo Conductual y Contextual</p>
+                            </div>
+                            <div class="bg-mint-100/50 p-4 rounded-lg">
+                                <h3 class="font-bold">Modalidad</h3>
+                                <p>Atención virtual y presencial</p>
+                            </div>
+                            <div class="bg-mint-100/50 p-4 rounded-lg">
+                               <h3 class="font-bold">Docencia</h3>
+                               <p>Profesora en la Universidad de Buenos Aires</p>
+                           </div>
+                        </div>
+                        <a href="#" class="mt-8 inline-block bg-accent-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-80 transition-transform duration-200 hover:scale-105">
+                            Conocer mi formación
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICIOS SECTION ===== -->
+        <section id="servicios" class="py-20 lg:py-32 bg-mint-100/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl lg:text-4xl font-display text-accent-dark reveal-up">Servicios para tu bienestar</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-neutral-800 reveal-up">Ofrezco un espacio seguro y confidencial para abordar diversas dificultades.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 reveal-up">
+                        <div class="text-mint-200 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-bold">Terapia Individual</h3>
+                        <p class="mt-2 text-neutral-600">Un espacio personalizado para explorar tus pensamientos y emociones, y desarrollar nuevas habilidades.</p>
+                        <a href="#contacto" class="mt-6 inline-block text-accent-dark font-semibold">Pedir turno &rarr;</a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 reveal-up">
+                        <div class="text-mint-200 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-bold">Manejo de Ansiedad</h3>
+                        <p class="mt-2 text-neutral-600">Aprende estrategias efectivas y basadas en evidencia para gestionar la ansiedad y el estrés.</p>
+                        <a href="#contacto" class="mt-6 inline-block text-accent-dark font-semibold">Pedir turno &rarr;</a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transition-transform duration-300 hover:-translate-y-2 reveal-up">
+                         <div class="text-mint-200 mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-bold">Depresión y Ánimo</h3>
+                        <p class="mt-2 text-neutral-600">Herramientas para comprender y transitar la depresión, recuperando la motivación y el placer.</p>
+                        <a href="#contacto" class="mt-6 inline-block text-accent-dark font-semibold">Pedir turno &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== TESTIMONIOS SECTION ===== -->
+        <section id="testimonios" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6 reveal-up">
+                <h2 class="text-3xl lg:text-4xl font-display text-accent-dark text-center">Testimonios y Resultados</h2>
+                <p class="mt-2 text-center text-neutral-600 text-sm">(Testimonios reales y anonimizados para proteger la confidencialidad)</p>
+                
+                <div class="swiper-container swiper-testimonios mt-12 relative">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white border border-gray-200 p-8 rounded-lg max-w-3xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                </div>
+                                <p class="text-lg italic text-neutral-800">"El espacio con Ornella me ayudó a entender patrones que repetía sin darme cuenta. Ahora tengo herramientas concretas para enfrentar el día a día de otra manera."</p>
+                                <p class="mt-4 font-semibold text-accent-dark">- Paciente, 28 años</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                             <div class="bg-white border border-gray-200 p-8 rounded-lg max-w-3xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                </div>
+                                <p class="text-lg italic text-neutral-800">"Pude ponerle nombre a lo que me pasaba con la ansiedad. El enfoque práctico de la terapia fue clave para mí. Estoy muy agradecida."</p>
+                                <p class="mt-4 font-semibold text-accent-dark">- Paciente, 35 años</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                             <div class="bg-white border border-gray-200 p-8 rounded-lg max-w-3xl mx-auto">
+                                <div class="flex items-center mb-4">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                </div>
+                                <p class="text-lg italic text-neutral-800">"La calidez y profesionalismo de Ornella me hicieron sentir cómoda desde la primera sesión. Recomiendo su acompañamiento."</p>
+                                <p class="mt-4 font-semibold text-accent-dark">- Paciente, 22 años</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles de Swiper -->
+                    <div class="swiper-pagination swiper-pagination-testimonios mt-8"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RECURSOS / INSTAGRAM SECTION ===== -->
+        <section id="recursos" class="py-20 lg:py-32 bg-mint-100/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl lg:text-4xl font-display text-accent-dark reveal-up">Recursos y Reflexiones</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-neutral-800 reveal-up">Comparto contenido psicoeducativo y reflexiones en mi perfil de Instagram.</p>
+                
+                <!-- Carrusel de Recursos con Swiper -->
+                <div class="swiper-container swiper-recursos mt-12 reveal-up">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="block group">
+                                <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045361/pos_1_yvkccp.png" alt="Publicación de Instagram 1" class="rounded-lg w-full h-auto object-cover aspect-square transition-transform duration-300 group-hover:scale-105">
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="block group">
+                                <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045362/post_2_oyeb5t.png" alt="Publicación de Instagram 2" class="rounded-lg w-full h-auto object-cover aspect-square transition-transform duration-300 group-hover:scale-105">
+                            </a>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="block group">
+                                <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045362/post_3_a28tms.png" alt="Publicación de Instagram 3" class="rounded-lg w-full h-auto object-cover aspect-square transition-transform duration-300 group-hover:scale-105">
+                            </a>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="block group">
+                                <img src="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758045362/post_4_dzoukx.png" alt="Publicación de Instagram 4" class="rounded-lg w-full h-auto object-cover aspect-square transition-transform duration-300 group-hover:scale-105">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Controles de Swiper -->
+                    <div class="swiper-button-next swiper-button-next-recursos"></div>
+                    <div class="swiper-button-prev swiper-button-prev-recursos"></div>
+                    <div class="swiper-pagination swiper-pagination-recursos mt-8"></div>
+                </div>
+                
+                <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" class="mt-12 inline-block bg-accent-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-80 transition-transform duration-200 hover:scale-105 reveal-up">
+                    Ver más en Instagram &rarr; @lic.ornelladalicandro
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== FAQ Section ===== -->
+        <section id="faq" class="py-20 lg:py-32">
+            <div class="container mx-auto px-6 max-w-4xl">
+                 <h2 class="text-3xl lg:text-4xl font-display text-accent-dark text-center reveal-up">Preguntas Frecuentes</h2>
+                 <div class="mt-12 space-y-6">
+                    <div class="reveal-up" data-accordion="item">
+                        <button class="w-full flex justify-between items-center text-left py-4 border-b border-mint-200" data-accordion="button">
+                            <span class="text-lg font-semibold text-accent-dark">¿Cuánto dura una sesión?</span>
+                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out" data-accordion="content">
+                            <p class="pt-4 pb-2 text-neutral-700">Las sesiones individuales tienen una duración aproximada de 50 minutos.</p>
+                        </div>
+                    </div>
+                     <div class="reveal-up" data-accordion="item">
+                        <button class="w-full flex justify-between items-center text-left py-4 border-b border-mint-200" data-accordion="button">
+                            <span class="text-lg font-semibold text-accent-dark">¿Cómo funciona la modalidad virtual?</span>
+                             <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out" data-accordion="content">
+                            <p class="pt-4 pb-2 text-neutral-700">Las sesiones virtuales se realizan a través de una plataforma de videollamada segura (como Google Meet o similar), garantizando la misma confidencialidad y calidad que una sesión presencial. Solo necesitas un dispositivo con conexión a internet y un espacio privado.</p>
+                        </div>
+                    </div>
+                     <div class="reveal-up" data-accordion="item">
+                        <button class="w-full flex justify-between items-center text-left py-4 border-b border-mint-200" data-accordion="button">
+                            <span class="text-lg font-semibold text-accent-dark">¿Cómo se realizan los pagos?</span>
+                             <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out" data-accordion="content">
+                            <p class="pt-4 pb-2 text-neutral-700">Los pagos se pueden realizar por transferencia bancaria o Mercado Pago, y deben efectuarse antes de cada sesión para confirmar el turno.</p>
+                        </div>
+                    </div>
+                    <div class="reveal-up" data-accordion="item">
+                        <button class="w-full flex justify-between items-center text-left py-4 border-b border-mint-200" data-accordion="button">
+                            <span class="text-lg font-semibold text-accent-dark">¿Qué pasa si necesito cancelar una sesión?</span>
+                             <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out" data-accordion="content">
+                            <p class="pt-4 pb-2 text-neutral-700">Las cancelaciones deben realizarse con al menos 24 horas de antelación. De lo contrario, la sesión deberá ser abonada, ya que ese espacio fue reservado exclusivamente para ti.</p>
+                        </div>
+                    </div>
+                    <div class="reveal-up" data-accordion="item">
+                        <button class="w-full flex justify-between items-center text-left py-4 border-b border-mint-200" data-accordion="button">
+                            <span class="text-lg font-semibold text-accent-dark">¿Mi información es confidencial?</span>
+                             <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out" data-accordion="content">
+                            <p class="pt-4 pb-2 text-neutral-700">Absolutamente. Todo lo conversado en sesión está protegido por el secreto profesional, de acuerdo con el código de ética y la Ley Nacional de Salud Mental N° 26.657.</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO SECTION ===== -->
+        <section id="contacto" class="py-20 lg:py-32 bg-mint-100/50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center">
+                    <h2 class="text-3xl lg:text-4xl font-display text-accent-dark reveal-up">Da el primer paso</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-neutral-800 reveal-up">La forma más sencilla de contactarme es a través de Instagram.</p>
+                </div>
+
+                <div class="mt-12 bg-white p-8 md:p-12 rounded-lg shadow-xl reveal-up text-center">
+                     <h3 class="text-2xl font-display text-accent-dark">¿Prefieres un contacto más directo?</h3>
+                    <p class="mt-4 text-neutral-800 max-w-lg mx-auto">Puedes enviarme un mensaje directo a través de Instagram para coordinar una consulta. ¡Te responderé a la brevedad!</p>
+                    <div class="mt-8">
+                        <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent-dark text-white px-10 py-3 rounded-full font-semibold text-lg hover:bg-opacity-80 transition-transform duration-200 hover:scale-105">
+                            Enviar mensaje por Instagram
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-accent-dark text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="font-display text-xl">Lic. Ornella D’Alicandro</h3>
+                    <p class="text-neutral mt-2">Psicóloga clínica · Profesora UBA</p>
+                    <p class="text-neutral mt-1">MN: 75929 · MP: 99785</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Contacto</h3>
+                     <a href="mailto:lic.ornelladalicandro@gmail.com" class="text-neutral mt-2 block hover:text-white transition">lic.ornelladalicandro@gmail.com</a>
+                     <!-- <p class="text-neutral mt-1">Dirección del consultorio (si aplica)</p> -->
+                </div>
+                <div>
+                     <h3 class="font-semibold">Redes Sociales</h3>
+                     <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" class="text-neutral mt-2 inline-block hover:text-white transition">Instagram</a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-neutral/30 pt-8 text-center text-neutral text-sm">
+                <p>&copy; <span id="year"></span> Lic. Ornella D’Alicandro. Todos los derechos reservados.</p>
+                <p class="mt-2"><a href="#" onclick="openPrivacyModal()" class="hover:text-white transition">Política de Privacidad</a> · <a href="#" onclick="openPrivacyModal()" class="hover:text-white transition">Aviso Legal</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MODALS ===== -->
+    
+    <!-- Modal Política de Privacidad -->
+    <div id="privacy-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 hidden" onclick="closePrivacyModal()">
+        <div class="bg-white rounded-lg w-full max-w-2xl max-h-[80vh] relative p-8 overflow-y-auto" onclick="event.stopPropagation()">
+             <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-accent-dark text-3xl">&times;</button>
+             <h2 class="text-2xl font-display">Política de Privacidad y Tratamiento de Datos</h2>
+             <div class="prose mt-4">
+                <p><strong>Última actualización: <span id="date"></span></strong></p>
+                <p>Este es un texto de ejemplo. Aquí debes incluir tu política de privacidad detallada, informando cómo se recopilan, usan y protegen los datos de tus pacientes y visitantes, en cumplimiento con la Ley de Protección de Datos Personales N° 25.326.</p>
+                <h3>1. Responsable del tratamiento</h3>
+                <p>Lic. Ornella D’Alicandro, email: lic.ornelladalicandro@gmail.com.</p>
+                <h3>2. Datos recopilados</h3>
+                <p>Se recopilan los datos que proporcionas a través del formulario de contacto (nombre, email, etc.) con el único fin de gestionar tu consulta o solicitud de turno.</p>
+                <h3>3. Confidencialidad</h3>
+                <p>La información clínica está protegida por el secreto profesional y no será compartida con terceros sin tu consentimiento explícito, salvo las excepciones que marca la ley.</p>
+             </div>
+        </div>
+    </div>
+    
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-accent-dark text-white p-4 flex flex-col sm:flex-row items-center justify-between gap-4 z-50 transform translate-y-full transition-transform duration-500">
+        <p class="text-sm">Este sitio web utiliza cookies para mejorar la experiencia de usuario. Al continuar navegando, aceptas su uso.</p>
+        <div class="flex gap-4">
+             <a href="#" onclick="openPrivacyModal()" class="underline text-sm">Saber más</a>
+             <button id="accept-cookies" class="bg-white text-accent-dark px-4 py-1 rounded-full font-semibold text-sm">Aceptar</button>
+        </div>
+    </div>
+
+
+    <!-- JS Libraries (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- ACTUALIZAR AÑO Y FECHA ---
+            document.getElementById('year').textContent = new Date().getFullYear();
+            document.getElementById('date').textContent = new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            // --- HEADER SCROLL EFFECT ---
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            // --- MOBILE MENU ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            
+            function toggleMenu() {
+                 mobileMenu.classList.toggle('hidden');
+                 mobileMenu.classList.toggle('-translate-x-full');
+                 document.body.classList.toggle('overflow-hidden');
+            }
+
+            mobileMenuButton.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+
+            // --- GSAP ANIMATIONS ---
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Hero Animation
+            const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+            heroTimeline
+                .from('.hero-title', { opacity: 0, y: 30, duration: 1 })
+                .from('.hero-subtitle', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
+                .from('.hero-cta', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
+                .from('.hero-visual', { opacity: 0, scale: 0.9, duration: 1 }, '-=0.8');
+
+            // 2. Scroll Reveal Animations
+            gsap.utils.toArray('.reveal-up').forEach(elem => {
+                gsap.from(elem, {
+                    scrollTrigger: {
+                        trigger: elem,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none',
+                    },
+                    opacity: 0,
+                    y: 40,
+                    duration: 1,
+                    ease: 'power3.out'
+                });
+            });
+
+            // --- LOTTIE BACKGROUND ANIMATION ---
+            lottie.loadAnimation({
+                container: document.getElementById('lottie-bg'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                // Lottie animation sutil. Reemplazar si se desea otra.
+                path: 'https://assets6.lottiefiles.com/packages/lf20_byi3i0f3.json' 
+            });
+
+            // --- SWIPER.JS TESTIMONIAL SLIDER ---
+            const swiperTestimonios = new Swiper('.swiper-testimonios', {
+                loop: true,
+                autoplay: {
+                    delay: 7000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination-testimonios',
+                    clickable: true,
+                },
+                keyboard: {
+                    enabled: true,
+                },
+            });
+            
+            // --- SWIPER.JS RECURSOS CAROUSEL ---
+            const swiperRecursos = new Swiper('.swiper-recursos', {
+                loop: true,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination-recursos',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-recursos',
+                    prevEl: '.swiper-button-prev-recursos',
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 30 },
+                    1024: { slidesPerView: 4, spaceBetween: 30 },
+                }
+            });
+
+            // --- FAQ ACCORDION ---
+            const accordionItems = document.querySelectorAll('[data-accordion="item"]');
+            accordionItems.forEach(item => {
+                const button = item.querySelector('[data-accordion="button"]');
+                const content = item.querySelector('[data-accordion="content"]');
+                const icon = button.querySelector('svg');
+
+                button.addEventListener('click', () => {
+                    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                    
+                    // Cerrar todos los demás
+                    accordionItems.forEach(otherItem => {
+                       if (otherItem !== item) {
+                          otherItem.querySelector('[data-accordion="content"]').style.maxHeight = '0px';
+                          otherItem.querySelector('svg').style.transform = 'rotate(0deg)';
+                       }
+                    });
+
+                    // Abrir o cerrar el actual
+                    if (isOpen) {
+                        content.style.maxHeight = '0px';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // --- COOKIE BANNER ---
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptCookiesBtn = document.getElementById('accept-cookies');
+            
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    cookieBanner.style.transform = 'translateY(0)';
+                }, 2000);
+            }
+
+            acceptCookiesBtn.addEventListener('click', () => {
+                cookieBanner.style.transform = 'translateY(100%)';
+                localStorage.setItem('cookiesAccepted', 'true');
+            });
+        });
+
+        // --- MODAL FUNCTIONS ---
+        // Privacy
+        const privacyModal = document.getElementById('privacy-modal');
+        function openPrivacyModal() {
+            privacyModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+        function closePrivacyModal() {
+            privacyModal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+    </script>
+</body>
+</html>
+
+
+
