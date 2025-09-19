@@ -11,7 +11,7 @@
     <meta name="keywords" content="psicologa, terapia, cognitivo conductual, tcc, ansiedad, depresion, uba, ornella d'alicandro, psicologa clinica">
     <meta property="og:title" content="Lic. Ornella D’Alicandro — Psicóloga Clínica y Profesora UBA">
     <meta property="og:description" content="Acompañamiento terapéutico para adultos y adolescentes. Terapia Cognitivo-Conductual y Contextual basada en evidencia. Atención online y presencial.">
-    <meta property="og:image" content="https://placehold.co/1200x630/D2F0F2/292A31?text=Lic.+Ornella+D'Alicandro">
+    <meta property="og:image" content="https://res.cloudinary.com/dgyjeotoa/image/upload/v1758148516/Captura_de_pantalla_2025-09-17_184630_r0uilb.png"> <!-- Reemplazar por imagen OG real -->
     <meta property="og:url" content="https://www.ornelladalicandro.com"> <!-- Reemplazar con el dominio real -->
     <meta property="og:type" content="website">
 
@@ -455,9 +455,10 @@
                      <h3 class="text-2xl font-display text-accent-dark">¿Lista/o para comenzar?</h3>
                     <p class="mt-4 text-neutral-800 max-w-lg mx-auto">Haz clic en el botón para copiar mi dirección de correo electrónico. ¡Te responderé a la brevedad!</p>
                     <div class="mt-8">
-                        <div class="inline-flex items-center gap-4 bg-gray-100 p-2 md:p-3 rounded-full shadow-inner">
-                            <span class="text-base md:text-lg text-accent-dark font-semibold px-2">lic.ornelladalicandro@gmail.com</span>
-                            <button data-copy-text="lic.ornelladalicandro@gmail.com" class="copy-btn bg-accent-dark text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-opacity-80 transition w-24">
+                        <!-- Componente de copiar email responsivo -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 bg-gray-100 p-4 sm:p-2 rounded-lg sm:rounded-full shadow-inner sm:inline-flex max-w-full">
+                            <span class="text-base text-center sm:text-left sm:text-lg text-accent-dark font-semibold sm:px-2 break-all sm:break-normal">lic.ornelladalicandro@gmail.com</span>
+                            <button data-copy-text="lic.ornelladalicandro@gmail.com" class="copy-btn bg-accent-dark text-white px-4 py-3 sm:py-2 rounded-lg sm:rounded-full text-sm font-semibold hover:bg-opacity-80 transition sm:w-24 flex-shrink-0">
                                 Copiar
                             </button>
                         </div>
@@ -490,12 +491,24 @@
                 </div>
                 <div>
                      <h3 class="font-semibold">Redes Sociales</h3>
-                     <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" class="text-neutral mt-2 inline-block hover:text-white transition">Instagram</a>
+                     <div class="flex items-center justify-center md:justify-start gap-4 mt-2">
+                         <a href="https://www.instagram.com/lic.ornelladalicandro" target="_blank" rel="noopener noreferrer" class="text-neutral hover:text-white transition" title="Instagram de Lic. Ornella D’Alicandro">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919 4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.505.012-4.725.068-2.693.123-3.886 1.32-4.009 4.009-.056 1.22-.067 1.583-.067 4.725s.011 3.505.067 4.725c.123 2.689 1.316 3.886 4.009 4.009 1.22.056 1.584.067 4.725.067s3.505-.011 4.725-.067c2.693-.123 3.886-1.32 4.009-4.009.056-1.22.067-1.583.067-4.725s-.011-3.505-.067-4.725c-.123-2.689-1.316-3.886-4.009-4.009-1.22-.056-1.584-.068-4.725-.068zm0 4.135c-2.378 0-4.307 1.93-4.307 4.307s1.93 4.307 4.307 4.307 4.307-1.93 4.307-4.307-1.93-4.307-4.307-4.307zm0 7.01c-1.492 0-2.705-1.213-2.705-2.705s1.213-2.705 2.705-2.705 2.705 1.213 2.705 2.705-1.213 2.705-2.705 2.705zm4.808-7.72a1.203 1.203 0 100-2.406 1.203 1.203 0 000 2.406z" /></svg>
+                             <span class="sr-only">Instagram</span>
+                         </a>
+                     </div>
                 </div>
             </div>
             <div class="mt-12 border-t border-neutral/30 pt-8 text-center text-neutral text-sm">
                 <p>&copy; <span id="year"></span> Lic. Ornella D’Alicandro. Todos los derechos reservados.</p>
                 <p class="mt-2"><a href="#" onclick="openPrivacyModal()" class="hover:text-white transition">Política de Privacidad</a> · <a href="#" onclick="openPrivacyModal()" class="hover:text-white transition">Aviso Legal</a></p>
+                <div class="mt-4 flex flex-wrap justify-center items-center gap-2 text-xs opacity-75">
+                    <span>Diseñado por: Samuel Gomez</span>
+                    <a href="https://www.instagram.com/samm.__90/" target="_blank" rel="noopener noreferrer" class="text-neutral hover:text-white transition" title="Instagram del diseñador">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919 4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.505.012-4.725.068-2.693.123-3.886 1.32-4.009 4.009-.056 1.22-.067 1.583-.067 4.725s.011 3.505.067 4.725c.123 2.689 1.316 3.886 4.009 4.009 1.22.056 1.584.067 4.725.067s3.505-.011 4.725-.067c2.693-.123 3.886-1.32 4.009-4.009.056-1.22.067-1.583.067-4.725s-.011-3.505-.067-4.725c-.123-2.689-1.316-3.886-4.009-4.009-1.22-.056-1.584-.068-4.725-.068zm0 4.135c-2.378 0-4.307 1.93-4.307 4.307s1.93 4.307 4.307 4.307 4.307-1.93 4.307-4.307-1.93-4.307-4.307-4.307zm0 7.01c-1.492 0-2.705-1.213-2.705-2.705s1.213-2.705 2.705-2.705 2.705 1.213 2.705 2.705-1.213 2.705-2.705 2.705zm4.808-7.72a1.203 1.203 0 100-2.406 1.203 1.203 0 000 2.406z" /></svg>
+                        <span class="sr-only">Instagram del diseñador</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
@@ -687,7 +700,7 @@
                 button.addEventListener('click', (e) => {
                     const textToCopy = e.currentTarget.dataset.copyText;
                     
-                    // Fallback method using a temporary textarea
+                    // Fallback method using a temporary textarea, more compatible than clipboard API
                     const textArea = document.createElement("textarea");
                     textArea.value = textToCopy;
                     // Make the textarea invisible
@@ -746,6 +759,9 @@
     </script>
 </body>
 </html>
+
+
+
 
 
 
